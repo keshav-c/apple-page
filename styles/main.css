@@ -38,13 +38,18 @@ nav {
    table-layout: fixed;
    /* https://en.wikipedia.org/wiki/Mach_bands */
    background: linear-gradient(
-                rgb(110, 110, 110),
-                rgb(110, 110, 110) 10%,
-                rgb(135, 135, 135), 
-                rgb(135, 135, 135) 50%,
-                rgb(100, 100, 100),
-                rgb(100, 100, 100) 90%,
-                rgb(83, 83, 83));
+        rgb(110, 110, 110),
+        rgb(110, 110, 110) 10%,
+        rgb(135, 135, 135), 
+        rgb(135, 135, 135) 50%,
+        rgb(100, 100, 100),
+        rgb(100, 100, 100) 90%,
+        rgb(83, 83, 83));
+}
+
+.nav-div a {
+    text-decoration: none;
+    color: white;
 }
 
 ul {
@@ -58,10 +63,7 @@ li {
     padding-top: 5px;
     padding-bottom: 5px;
     text-align: center;
-}
-
-li {
-    border-right: 1px solid black;
+    border-right: 0.5px solid black;
 }
 
 li:last-child {
@@ -79,6 +81,22 @@ input {
 h1, h2, h3 {
     text-align: center;
     color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 2.2em;
+    width: 65%;
+    margin: 30px auto;
+}
+
+h3 {
+    font-size: 1.8em;
 }
 
 .teasers {
