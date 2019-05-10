@@ -4,3 +4,51 @@
     border: 0;
 }
 
+.container {
+    max-width: 80%;
+    min-width: 960px;
+    margin: 0 auto;
+    height: 90vh;
+    /* min-height: 800px; */
+    position: relative;
+    top: 0;; 
+    bottom: 100px; 
+    /* background: rgb(160, 188, 210); */
+    /* background: gold; */
+}
+
+.main {
+    width: 100%;
+    height: 80%;
+    margin-bottom: 1px;
+    /* border: 1px solid green;  */
+    background-image: url('../images/your_verse_hero.jpg');
+    background-position: bottom;
+    background-size: cover;
+}
+
+nav {
+    position
+}
+
+.teasers {
+    width: 100%;
+    /* position: absolute;
+    bottom: 0; */
+    /* height: 24%; */
+    background: tomato;
+}
+
+.teasers div {
+    display: inline-block;
+    /* vertical-align: bottom; */
+    width: 25%;
+    /* height: 100%; */
+}
+
+.teasers img {
+    width: 100%;
+    height: auto;
+    /* position: relative;
+    bottom: 0; */
+}
