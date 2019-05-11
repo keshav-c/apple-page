@@ -1,8 +1,18 @@
-* {
+body, div, nav, ul, li, a, i, form, label, 
+input, h1, h2, h3, img, footer, p, span
+{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+/*The linter forced me to replace the following universal 
+selector with the above. :(*/
+/* * {
     border: 0;
     margin: 0;
     padding: 0;
-}
+} */
 
 .container {
     bottom: 100px; 
@@ -24,6 +34,7 @@
 
 /* When I remove this border, the layout changes */
 .nav-div {
+    border: 1px solid rgb(146, 44, 95);
     border: 1px solid rgba(146, 44, 95, 0);
 }
 
@@ -37,7 +48,6 @@ nav {
         rgb(100, 100, 100),
         rgb(100, 100, 100) 90%,
         rgb(83, 83, 83));
-    border: 1px solid rgba(0, 0, 0, 0.137);
     border-radius: 5px;
     display: table;
     margin: 100px auto;
@@ -82,31 +92,35 @@ nav li:hover {
 }
 
 input {
+    background: rgb(255,255, 255);
     background: rgba(255,255, 255, 0.3);
     border-radius: 8px;
     height: 1.2em;
     width: 84%;
 }
 
-h1, h2, h3 {
+h1 {
     font-family: 'Roboto', sans-serif;
+    font-size: 4em;
     font-weight: 200;
     text-align: center;
 }
 
-h1 {
-    font-size: 4em;
-}
-
 h2 {
+    font-family: 'Roboto', sans-serif;
     font-size: 2.2em;
+    font-weight: 200;
     margin: 30px auto;
+    text-align: center;
     width: 65%;
 }
 
 h3 {
+    font-family: 'Roboto', sans-serif;
     font-size: 1.8em;
+    font-weight: 200;
     margin-bottom: 150px;
+    text-align: center;
 }
 
 .teasers {
