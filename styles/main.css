@@ -1,13 +1,14 @@
 body, div, nav, ul, li, a, i, form, label, 
-input, h1, h2, h3, img, footer, p, span
+input, img, footer, p, span
 {
     border: 0;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 /*The linter forced me to replace the following universal 
-selector with the above. :(*/
+selector with the above. Also removed h1, h2, h3 from the
+above reset. :(*/
 /* * {
     border: 0;
     margin: 0;
