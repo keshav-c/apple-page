@@ -135,13 +135,17 @@ footer {
 footer div {
     display: inline-block;
     vertical-align: top;
+    width: 50%;
 }
 
-.footer-right{
-    float: right;
+.copy {
+    display: inline-block;
+    width: 45%;
 }
-.footer-left {
-    float: left;
+
+.legal {
+    display: inline-block;
+    width: 30%;
 }
 
 footer p {
@@ -153,6 +157,7 @@ footer li {
 }
 
 footer a{
+    color: rgb(14, 131, 199);
     text-decoration: none;
 }
 
