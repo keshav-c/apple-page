@@ -25,8 +25,9 @@
     background-size: cover;
 }
 
+/* When I remove this border, the layout changes */
 .nav-div {
-    border: 1px solid rgb(146, 44, 95);
+    border: 1px solid rgba(146, 44, 95, 0);
 }
 
 nav {
@@ -52,6 +53,11 @@ nav {
     color: white;
 }
 
+.nav-div > a:last-child :hover {
+    text-decoration: underline;
+    /* border: 1px solid indigo; */
+}
+
 ul {
     display: table-row;
     /* width: 100%; */
@@ -66,13 +72,32 @@ li {
     border-right: 0.5px solid black;
 }
 
+li div {
+    /* height: 100%; */
+}
+
+/* li div:hover {
+    background: black;
+} */
+
 li:last-child {
     border: none;
 }
 
+li:hover {
+    background: linear-gradient(
+        rgb(50, 50, 50),
+        rgb(50, 50, 50) 10%,
+        rgb(80, 80, 80), 
+        rgb(80, 80, 80) 50%,
+        rgb(100, 100, 100),
+        rgb(100, 100, 100) 90%,
+        rgb(40, 40, 40));
+}
+
 input {
     /* padding: 2px 4px; */
-    width: 85%;
+    width: 84%;
     height: 1.2em;
     border-radius: 8px;
     background: rgba(255,255, 255, 0.3);
@@ -98,6 +123,8 @@ h2 {
 h3 {
     font-size: 1.8em;
 }
+
+
 
 .teasers {
     width: 100%;
