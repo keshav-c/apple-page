@@ -8,8 +8,6 @@
     max-width: 80%;
     min-width: 960px;
     margin: 0 auto;
-    height: 90vh;
-    min-height: 800px;
     position: relative;
     top: 0;
     bottom: 100px; 
@@ -19,7 +17,6 @@
     width: 100%;
     height: 80%;
     margin-bottom: 1px;
-    /* border: 2px solid green;  */
     background-image: url('../images/your_verse_hero.jpg');
     background-position: bottom;
     background-size: cover;
@@ -27,7 +24,7 @@
 
 /* When I remove this border, the layout changes */
 .nav-div {
-    border: 1px solid rgba(146, 44, 95, 0);
+    border: 1px solid rgba(146, 44, 95, 1);
 }
 
 nav {
@@ -55,36 +52,25 @@ nav {
 
 .nav-div > a:last-child :hover {
     text-decoration: underline;
-    /* border: 1px solid indigo; */
 }
 
 ul {
     display: table-row;
-    /* width: 100%; */
 }
 
 li {
     display: table-cell;
-    /* width: 100%; */
     padding-top: 5px;
     padding-bottom: 5px;
     text-align: center;
     border-right: 0.5px solid black;
 }
 
-li div {
-    /* height: 100%; */
-}
-
-/* li div:hover {
-    background: black;
-} */
-
 li:last-child {
     border: none;
 }
 
-li:hover {
+nav li:hover {
     background: linear-gradient(
         rgb(50, 50, 50),
         rgb(50, 50, 50) 10%,
@@ -96,7 +82,6 @@ li:hover {
 }
 
 input {
-    /* padding: 2px 4px; */
     width: 84%;
     height: 1.2em;
     border-radius: 8px;
@@ -105,7 +90,6 @@ input {
 
 h1, h2, h3 {
     text-align: center;
-    color: white;
     font-family: 'Roboto', sans-serif;
     font-weight: 200;
 }
@@ -122,28 +106,56 @@ h2 {
 
 h3 {
     font-size: 1.8em;
+    margin-bottom: 150px;
 }
 
 
 
 .teasers {
     width: 100%;
-    /* position: absolute;
-    bottom: 0; */
-    /* height: 24%; */
-    /* background: tomato; */
 }
 
 .teasers div {
     display: inline-block;
-    /* vertical-align: bottom; */
     width: 25%;
-    /* height: 100%; */
 }
 
 .teasers img {
     width: 100%;
     height: auto;
-    /* position: relative;
-    bottom: 0; */
+}
+
+footer {
+    width: 60%;
+    margin: 25px auto;
+    font-size: 0.7em;
+    color: #888;
+}
+
+footer div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer-right{
+    float: right;
+}
+.footer-left {
+    float: left;
+}
+
+footer p {
+    margin-bottom: 20px;
+}
+
+footer li {
+    padding: 0 5px; 
+}
+
+footer a{
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
