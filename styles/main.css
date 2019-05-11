@@ -1,39 +1,33 @@
 * {
+    border: 0;
     margin: 0;
     padding: 0;
-    border: 0;
 }
 
 .container {
+    bottom: 100px; 
+    margin: 0 auto;
     max-width: 80%;
     min-width: 960px;
-    margin: 0 auto;
     position: relative;
     top: 0;
-    bottom: 100px; 
 }
 
 .main {
-    width: 100%;
-    height: 80%;
-    margin-bottom: 1px;
     background-image: url('../images/your_verse_hero.jpg');
     background-position: bottom;
     background-size: cover;
+    height: 80%;
+    margin-bottom: 1px;
+    width: 100%;
 }
 
 /* When I remove this border, the layout changes */
 .nav-div {
-    border: 1px solid rgba(146, 44, 95, 1);
+    border: 1px solid rgba(146, 44, 95, 0);
 }
 
 nav {
-   border: 1px solid rgba(0, 0, 0, 0.137);
-   border-radius: 5px;
-   width: 80%;
-   margin: 100px auto;
-   display: table;
-   table-layout: fixed;
    /* https://en.wikipedia.org/wiki/Mach_bands */
    background: linear-gradient(
         rgb(110, 110, 110),
@@ -43,11 +37,17 @@ nav {
         rgb(100, 100, 100),
         rgb(100, 100, 100) 90%,
         rgb(83, 83, 83));
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    border-radius: 5px;
+    display: table;
+    margin: 100px auto;
+    table-layout: fixed;
+    width: 80%;
 }
 
 .nav-div a {
-    text-decoration: none;
     color: white;
+    text-decoration: none;
 }
 
 .nav-div > a:last-child :hover {
@@ -59,11 +59,11 @@ ul {
 }
 
 li {
-    display: table-cell;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    text-align: center;
     border-right: 0.5px solid black;
+    display: table-cell;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: center;
 }
 
 li:last-child {
@@ -82,16 +82,16 @@ nav li:hover {
 }
 
 input {
-    width: 84%;
-    height: 1.2em;
-    border-radius: 8px;
     background: rgba(255,255, 255, 0.3);
+    border-radius: 8px;
+    height: 1.2em;
+    width: 84%;
 }
 
 h1, h2, h3 {
-    text-align: center;
     font-family: 'Roboto', sans-serif;
     font-weight: 200;
+    text-align: center;
 }
 
 h1 {
@@ -100,16 +100,14 @@ h1 {
 
 h2 {
     font-size: 2.2em;
-    width: 65%;
     margin: 30px auto;
+    width: 65%;
 }
 
 h3 {
     font-size: 1.8em;
     margin-bottom: 150px;
 }
-
-
 
 .teasers {
     width: 100%;
@@ -121,15 +119,15 @@ h3 {
 }
 
 .teasers img {
-    width: 100%;
     height: auto;
+    width: 100%;
 }
 
 footer {
-    width: 60%;
-    margin: 25px auto;
-    font-size: 0.7em;
     color: #888;
+    font-size: 0.7em;
+    margin: 25px auto;
+    width: 60%;
 }
 
 footer div {
